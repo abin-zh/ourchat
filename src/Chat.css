@@ -1,0 +1,330 @@
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    width: 3px;
+    border-radius: 8px;
+    background-color: #1f1f1f8f;
+}
+::-webkit-scrollbar-track-piece{
+    margin: 1px 0;
+}
+.Chat_content{
+    width: 100%;
+    height: 100vh;
+    min-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://cn.bing.com/th?id=OHR.HouseboatKerala_ZH-CN0318796630_1920x1080.jpg&rf=LaDigue_1920x1080.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.Chat_Tab{
+    display: flex;
+    width: 800px;
+    height: 700px;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #ffffff3a, #dedede32);
+    box-shadow:  18px 32px 62px #505050c5;
+    backdrop-filter: blur(16px);
+}
+.Chat_left{
+    width: 20%;
+    border-radius: 14px 0 0 14px;
+    background-color: rgba(85, 84, 84, 0.301);
+}
+.Chat_right{
+    width: 80%;
+    border-radius: 0 14px 14px 0;
+    background-color: rgba(199, 235, 255, 0.466);
+}
+.Chat_Left_head,.Chat_Right_head{
+    width: auto;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 14px 0 0 0;
+    /* border: 1px solid #eeeeee; */
+}
+.Chat_Right_head{
+    border-radius: 0 14px 0 0;
+}
+.Chat_Left_img{
+    background-image: url(./img/head.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-left: 8px;
+    width: 32px;
+    height: 70%;
+    border-radius: 10px 2px 2px 2px;
+}
+.Chat_Right_img{
+    width: 36px;
+    height: 70%;
+    background-color: gainsboro;
+    margin-left: 8px;
+}
+.Chat_Left_name{
+    width: 55%;
+    height: 70%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+.Chat_Right_name{
+    width: 95%;
+    height: 70%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.online,.offline{
+    width: 5%;
+    height: 18%;
+    border-radius: 15px;
+    background-color: forestgreen;
+    margin-left: 8px;
+    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.308);
+    transition: all 0.2s ease-in-out;
+}
+.online:hover,.offline:hover{
+    transform: scale(1.8);
+    box-shadow: 1px 1px 5px 1px rgba(211, 211, 211, 0.208);
+}
+.offline{
+    background-color: #fd0404;
+}
+.Chat_nav{
+    width: auto;
+    height: 20px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid #eeeeee; */
+}
+.Chat_input{
+    width: 70%;
+    height: 80%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 4px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.Chat_nav button,.Search_head button,.Search_list table button,.Chat_refresh button,.Chat_Delete button,.input_body button{
+    width: 20px;
+    height: 100%;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.308);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.Chat_nav button:hover,.Search_head button:hover,.Search_list table button:hover,.Chat_refresh button:hover,.Chat_Delete button:hover,.input_body button:hover{
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.308);
+}
+.Chat_input:hover{
+    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.308);
+}
+.Chat_input:focus{
+    box-shadow: 4px 6px 6px 2px rgba(0, 0, 0, 0.308);
+}
+
+.toastCenter,.searchClass{
+    z-index: 99;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    background-color:rgba(250,227,0, 0.952);
+    box-shadow: 4px 6px 6px 2px rgba(111, 112, 112, 0.719);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchClass{
+    z-index: 98;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.Search_head{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 4px 4px 0;
+    border-bottom: 2px solid #eeeeee;
+    align-items: flex-end;
+}
+
+.Search_title{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Search_list{
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    overflow: auto;
+}
+
+.Search_list table{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.Search_list table tr{
+    width: 33%;
+    font-size: 10px;
+}
+.Search_add{
+    display: flex;
+    justify-content: center;
+}
+.disnone{
+    display: none;
+}
+.Chat_refresh{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid #fbf9f9; */
+}
+
+.Chat_refresh button{
+    width: 100%;
+    margin: 8px;
+}
+
+.Chat_list{
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    overflow: auto;
+}
+.cl{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 1px solid #eeeeee; */
+}
+.cl:hover{
+    background-color: #eeeeee6c;
+}
+.cl_img{
+    margin-left: 8px;
+    width: 32px;
+    height: 70%;
+    background-color: #bebebe;
+}
+.cl .online,.cl .offline{
+   margin-right: 8px;
+}
+.cl_name{
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.Chat_Delete{
+    margin: 8px;
+    width: 30px;
+    height: 20px;
+}
+
+.Chat_body{
+    border-top:3px solid #d1d1d1;
+    width: 100%;
+    height: 75%;
+    overflow: auto;
+}
+.input_body{
+    width: 100%;
+    height: 18%;
+    border-radius: 0 0 14px 0;
+    /* border-top:3px solid #616161; */
+}
+.input_body textarea{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #eeeeeed2;
+    border-radius: 0 0 14px 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+}
+.input_body button{
+    margin: 8px;
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+}
+
+.Talk{
+    width: 100%;
+    height: 50px;
+    overflow: auto;
+}
+
+.Talk_all{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 45px;
+}
+.Left{
+    margin-left: 8px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.Left_img{
+    background-color: rgba(0, 0, 0, 0.616);
+}
+.Right_img{
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.Right{
+    margin-right: 8px;
+    justify-content: flex-end;
+}
+.Talk_img{
+    width: 32px;
+    height: 70%;
+}
+.Talk_chat{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    width: auto;
+    height: 70%;
+    background-color: rgb(226, 226, 226);
+    margin: 0 8px;
+    padding: 0 8px;
+}
+
