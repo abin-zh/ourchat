@@ -2,6 +2,7 @@
 
 1 介绍
 react实时聊天程序
+bilibili(https://www.bilibili.com/video/BV1Vg411c7TS/?spm_id_from=333.999.0.0&vd_source=1253ecf379e949dd0c88384081928592)
 
 2 软件架构  
 前端：react  
